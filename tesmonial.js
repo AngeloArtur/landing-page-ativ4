@@ -62,35 +62,68 @@ const testimonials = [
 ];
 
 const cardsContainer = document.querySelector(".cards");
+const swiperContainer = document.querySelector(".mySwiper-testmonial");
+
+if(window.innerWidth <= 425) {
+    swiperContainer.removeAttribute("navigation")
+}
 
 testimonials.forEach((item) => {
-  const card = document.createElement("div");
+    const card = document.createElement("div");
+    const slide = document.createElement("swiper-slide");
 
-  card.classList.add("card");
-  card.style.width = "18rem";
-  card.style.minHeight = "16rem";
+    card.classList.add("card");
+    card.style.width = "18rem";
+    card.style.minHeight = "16rem";
 
-  card.classList.add("col-12", "col-md-6", "col-lg-4", "mb-4");
-  const cardBody = document.createElement("div");
-  cardBody.classList.add("card-body", "p-3");
+    card.classList.add("col-12", "col-md-6", "col-lg-4", "mb-4");
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body", "p-3");
 
-  const cardTitle = document.createElement("h4");
-  cardTitle.classList.add("card-title");
-  cardTitle.innerHTML = item.name;
+    const cardTitle = document.createElement("h4");
+    cardTitle.classList.add("card-title");
+    cardTitle.innerHTML = item.name;
 
-  const cardSubtitle = document.createElement("span");
-  cardSubtitle.classList.add("card-subtitle", "mb-2", "text-body-secondary", "achievements-span");
-  cardSubtitle.innerHTML = item.company;
+    const cardSubtitle = document.createElement("span");
+    cardSubtitle.classList.add(
+        "card-subtitle",
+        "mb-2",
+        "text-body-secondary",
+        "achievements-span"
+    );
+    cardSubtitle.innerHTML = item.company;
 
-  const cardText = document.createElement("p");
-  cardText.classList.add("card-text");
-  cardText.innerHTML = item.testimonial;
+    const cardText = document.createElement("p");
+    cardText.classList.add("card-text");
+    cardText.innerHTML = item.testimonial;
 
-  cardBody.appendChild(cardTitle);
-  cardBody.appendChild(cardSubtitle);
-  cardBody.appendChild(cardText);
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(cardSubtitle);
+    cardBody.appendChild(cardText);
 
-  card.appendChild(cardBody);
-
-  cardsContainer.appendChild(card);
+    card.appendChild(cardBody);
+    slide.appendChild(card);
+    swiperContainer.append(slide);
+    cardsContainer.appendChild(swiperContainer);
 });
+
+Object.assign(swiperContainer, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      clickable: true,
+    },
+    breakpoints: {
+      425: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
