@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg justify-content-between p-md-4">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="assets/logo.svg" alt="logo do site" id="logo-nav" />
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav d-flex gap-4">
+                        <li class="nav-item">Sobre</li>
+                        <li class="nav-item">Serviços</li>
+                        <li class="nav-item">Testemunhos</li>
+                        <li class="nav-item">Contato</li>
+                    </ul>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                    <span class="nav-item contrast">Login</span>
+                    <button class="btn btn-primary nav-item">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <section
+            class="home d-flex justify-content-center flex-column flex-lg-row align-items-center p-3"
+        >
+            <div class="text-center text-lg-start px-lg-4">
+                <h1 class="pb-3">
+                    Lessons and insights <br />
+                    <span class="contrast">from 8 years</span>
+                </h1>
+                <p class="pb-4">
+                    Where to grow your business as a photographer: site or
+                    social media?
+                </p>
+                <button class="btn btn-primary">Register</button>
+            </div>
+            <img
+                src="assets/home-illustration.svg"
+                alt=""
+                class="home-img mt-4"
+            />
+        </section>
+
+        <section class="clients d-flex flex-column p-4">
+            <div class="m-auto">
+                <h2 class="d-flex justify-content-center">Our Clients</h2>
+                <p class="text-center">
+                    We have been working with some Fortune 500+ clients
+                </p>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center pt-5">
+                    <swiper-container
+                        class="mySwiper"
+                        pagination="true"
+                        pagination-clickable="false"
+                        navigation="false"
+                        centered-slides="true"
+                        autoplay-delay="2000"
+                        autoplay-disable-on-interaction="false"
+                    >
+                        <swiper-slide>
+                            <div
+                                class="col-6 col-lg-2 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/logo-clients/logo1.svg"
+                                    alt="SVG 1"
+                                    class="img-fluid"
+                                /></div
+                        ></swiper-slide>
+                        <swiper-slide>
+                            <div
+                                class="col-6 col-lg-2 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/logo-clients/logo2.svg"
+                                    alt="SVG 2"
+                                    class="img-fluid"
+                                /></div
+                        ></swiper-slide>
+                        <swiper-slide>
+                            <div
+                                class="col-6 col-lg-2 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/logo-clients/logo3.svg"
+                                    alt="SVG 3"
+                                    class="img-fluid"
+                                /></div
+                        ></swiper-slide>
+                        <swiper-slide>
+                            <div
+                                class="col-6 col-lg-2 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/logo-clients/logo4.svg"
+                                    alt="SVG 4"
+                                    class="img-fluid"
+                                /></div
+                        ></swiper-slide>
+                        <swiper-slide>
+                            <div
+                                class="col-6 col-lg-2 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/logo-clients/logo5.svg"
+                                    alt="SVG 5"
+                                    class="img-fluid"
+                                /></div
+                        ></swiper-slide>
+                        <swiper-slide>
+                            <div
+                                class="col-6 col-lg-2 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/logo-clients/logo6.svg"
+                                    alt="SVG 6"
+                                    class="img-fluid"
+                                /></div
+                        ></swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+        </section>
+
+        <section class="about d-flex align-items-center pt-4">
+            <div
+                class="container h-100 d-flex flex-column justify-content-center"
+            >
+                <div
+                    class="row justify-content-between align-items-center pt-5 h-100"
+                >
+                    <div class="col-12 col-md-4 mb-4 align-items-center">
+                        <img
+                            src="/assets/mobile-login.svg"
+                            alt="Imagem Mobile Login"
+                            class="img-fluid"
+                        />
+                    </div>
+
+                    <div class="col-12 col-md-7 align-items-center">
+                        <h2>
+                            The unseen of spending three years at Pixelgrade
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ratione ad nulla iste hic quas doloremque
+                            rerum natus dignissimos assumenda aut rem laudantium
+                            blanditiis sapiente, nisi debitis minus neque
+                            consequuntur mollitia!
+                        </p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements d-flex align-items-center mt-4">
+            <div class="container">
+                <div
+                    class="row justify-content-between align-items-center pt-5 h-100"
+                >
+                    <div class="col-12 col-md-4 mb-4">
+                        <h2>
+                            Helping a local
+                            <span class="contrast"
+                                >business reinvent itself</span
+                            >
+                        </h2>
+                        <p>We reached here with our hard work and dedication</p>
+                    </div>
+
+                    <div class="col-12 col-md-8">
+                        <div class="row justify-content-center">
+                            <div
+                                class="col-12 col-md-6 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/achievements/members.png"
+                                    alt="Members Icon"
+                                    class="img-fluid icon"
+                                />
+                                <div class="ms-3">
+                                    <h3>2,245,341</h3>
+                                    <span class="achievements-span"
+                                        >Members</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-12 col-md-6 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/achievements/events.png"
+                                    alt="Events Icon"
+                                    class="img-fluid icon"
+                                />
+                                <div class="ms-3">
+                                    <h3>828,867</h3>
+                                    <span class="achievements-span"
+                                        >Event Bookings</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-12 col-md-6 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/achievements/clubs.png"
+                                    alt="Clubs Icon"
+                                    class="img-fluid icon"
+                                />
+                                <div class="ms-3">
+                                    <h3>46,328</h3>
+                                    <span class="achievements-span">Clubs</span>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-12 col-md-6 d-flex justify-content-center mb-4"
+                            >
+                                <img
+                                    src="/assets/achievements/payment.png"
+                                    alt="Payment Icon"
+                                    class="img-fluid icon"
+                                />
+                                <div class="ms-3">
+                                    <h3>1,926,436</h3>
+                                    <span class="achievements-span"
+                                        >Payments</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testmonial mt-4">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center">
+                    <h2 class="text-center">Depoimentos</h2>
+                    <span class="text-center w-50">
+                        The Nexcent blog is the best place to read about the
+                        latest membership insights, trends and more. See who's
+                        joining the community, read about how our community are
+                        increasing their membership income and lot's
+                        more.
+                    ​</span>
+                </div>
+                <div class="row cards my-4 d-flex gap-4 justify-content-center">    
+                </div>
+            </div>
+        </section>
+        <footer class="footer d-flex text-white align-items-center pt-4">
+            <div class="container">
+                <div class="row justify-content-between align-middle">
+                    <div
+                        class="col-12 col-md-4 d-flex flex-column align-items-start mb-4"
+                    >
+                        <img
+                            src="assets/logo-white.svg"
+                            alt="Logo"
+                            class="img-fluid mb-2"
+                        />
+                        <div class="copyright">
+                            <p>Copyright © 2020 Nexcent Ltd.</p>
+                            <p>All rights reserved</p>
+                        </div>
+                        <div class="social-links d-flex gap-3">
+                            <i class="bi bi-0-circle"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <h4>Company</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" class="text-white"
+                                            >About Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white"
+                                            >Careers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-white">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-8">
+                                <h4>Stay Up to Date</h4>
+                                <input
+                                    type="email"
+                                    class="form-control mb-2"
+                                    id="exampleFormControlInput1"
+                                    placeholder="name@example.com"
+                                />
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                ></textarea>
+                                <button
+                                    class="btn btn-primary mt-2 align-items-end"
+                                >
+                                    <img src="/assets/sent.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="tesmonial.js"></script>
+    </body>
+</html>

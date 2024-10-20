@@ -1,0 +1,132 @@
+/* main font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    font-family: "Inter";
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--grey);
+    min-width: 7.5rem;
+}
+h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+:root {
+    --primary: #4caf4f;
+    --onHover: #2e7d31;
+    --silver: #f5f7fa;
+    --black: #263238;
+    --neutral-grey: #717171;
+    --grey: #4d4d4d;
+}
+
+#logo-nav {
+    width: 6rem;
+}
+
+.home {
+    background-color: var(--silver);
+    min-height: 37.5rem;
+}
+
+.home-img {
+    width: 18rem;
+}
+
+.contrast {
+    color: var(--primary);
+}
+
+/* *modified default bootstrap class */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: 0;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--onHover);
+}
+
+.achievements {
+    background-color: var(--silver);
+    min-height: 18rem;
+}
+
+.achievements-span {
+    color: var(--neutral-grey);
+    font-size: 0.875rem;
+    display: block;
+}
+
+.card {
+    background-color: var(--silver);
+}
+.icon {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: var(--black);
+    min-height: 18.75rem;
+}
+swiper-container {
+    width: 80%;
+    height: 80%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+/* *others sizes */
+@media (min-width: 1024px) {
+    #logo-nav {
+        width: 10rem;
+    }
+    .navbar {
+        padding: 1.5rem !important;
+    }
+    .home-img {
+        width: 25rem;
+    }
+    .swiper {
+        max-width: 60rem;
+    }
+}
